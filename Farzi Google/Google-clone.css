@@ -1,0 +1,24 @@
+#google-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-height: 8%;
+    max-width: 80%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+}
+#seach-bar{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: left;
+    padding: 5px;
+    font-size: 20px;
+    width: 70%;
+}
