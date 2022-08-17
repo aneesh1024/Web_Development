@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  background: #0d0f12;
+  color: #fff;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  /* margin-top: 25px; */
+}
+
+#left {
+  margin-top: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+#right {
+  flex: 1;
+  background: url("../../Images for websites/bg-gtm-2020.png") no-repeat
+    center/cover;
+  background-size: auto;
+  background-color: black;
+}
+
+/* Sign In */
+#signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  padding-bottom: 1rem;
+}
+
+#signin form {
+  width: 80%;
+  padding-bottom: 3rem;
+}
+
+#signin .logo {
+  margin-bottom: 8vh;
+}
+
+#signin .logo img {
+  width: 300px;
+}
+
+#signin label {
+  font-size: 0.9rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+#signin .text-input {
+  margin-bottom: 1.3rem;
+  width: 100%;
+  border-radius: 3px;
+  background: #0d0f12;
+  border: 1px solid #555;
+  /* height: 20px; */
+  padding: 0.5rem 1rem;
+  line-height: 1.3rem;
+}
+
+#signin .primary-btn {
+  width: 100%;
+}
+
+#signin .secondary-btn,
+.or {
+  width: 80%;
+}
+
+#signin .links a {
+  color: #2ea0d6;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  display: block;
+  text-align: center;
+  /* line-height: 2rem; */
+}
+
+#signin .links a:hover {
+  color: #006395;
+  text-decoration: underline;
+}
+
+/* #signin .or {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
+
+#signin .or .bar {
+  /* flex: auto; */
+  margin-bottom: 1.2rem;
+  border: none;
+  height: 1px;
+  background: hsla(0, 0%, 100%, 0.15);
+}
+/* Button */
+.primary-btn {
+  padding: 0.7rem 1rem;
+  height: 2.7rem;
+  display: block;
+  border: 0;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  background-color: #0074ab;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.primary-btn:hover {
+  background: #006395;
+}
+
+.secondary-btn {
+  padding: 0.7rem 1rem;
+  height: 2.7rem;
+  display: block;
+  border: none;
+  width: 80%;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  background: rgba(138, 153, 168, 0.25);
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.secondary-btn:hover {
+  background-color: rgba(138, 153, 168, 0.3);
+}
+
+.showcase-content {
+  padding: 150px 90px;
+}
+
+.showcase-content .secondary-btn {
+  margin-top: 30px;
+  width: 40%;
+  background: linear-gradient(to right, #f05a28, #ec008c, #f05a28);
+}
+
+.build-better {
+  width: 170px;
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+}
+
+#main-footer {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 13px;
+  text-align: center;
+  /* width: 100%; */
+  line-height: 5px;
+  color: gray;
+}
+
+#main-footer a {
+  color: gray;
+}
+
+#main-footer a:hover {
+  color: #006395;
+}
+
+/* Media Querry */
+@media (min-width: 1200px) {
+  #left {
+    flex: 4;
+  }
+  #right {
+    flex: 6;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile View*/
+  body {
+    overflow: auto;
+  }
+
+  #right {
+    display: none;
+  }
+
+  #left {
+    justify-content: start;
+    margin-top: 4vh;
+  }
+
+  #sginin {
+    width: 90%;
+  }
+
+  #signin .logo {
+    margin-bottom: 2vh;
+  }
+
+  #signin .text-input {
+    margin-bottom: 0.7rem;
+  }
+
+  #main-footer {
+    padding-top: 1rem;
+  }
+}
