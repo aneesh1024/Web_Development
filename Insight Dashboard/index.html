@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Telugu&family=Montserrat&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Insight - Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="Images/Insight-logo.png" alt="">
+                <span>Insight</span>
+            </div>
+            <div class="dashboards">
+                <svg width="21" height="21" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M3.75 9.938V21a.75.75 0 0 0 .75.75H9v-6.375a1.125 1.125 0 0 1 1.125-1.125h3.75A1.125 1.125 0 0 1 15 15.375v6.375h4.5a.75.75 0 0 0 .75-.75V9.937">
+                    </path>
+                    <path
+                        d="m22.5 12-9.99-9.563c-.234-.248-.782-.25-1.02 0L1.5 11.999">
+                    </path>
+                    <path d="M18.75 8.39V3H16.5v3.234"></path>
+                </svg>
+                <span>Dashboards</span>
+            </div>
+            <div class="pages">
+                Pages
+                <ul>
+                    <li>
+                        <div>
+                            <svg width="21" height="21" fill="none"
+                                stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 21h6v-1a6 6 0 0 0-9-5.197"></path>
+                                <path d="M15 21H3v-1a6 6 0 1 1 12 0v1Z"></path>
+                                <path d="M12 4.354a4 4 0 1 1 0 5.292"></path>
+                                <path
+                                    d="M11.828 9.828a4 4 0 1 0-5.656-5.656 4 4 0 0 0 5.656 5.656Z">
+                                </path>
+                            </svg>
+                            <span>Users</span>
+                        </div>
+                        <svg width="13" height="13" fill="none"
+                            stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="m19 9-7 7-7-7"></path>
+                        </svg>
+                    </li>
+                    <li>
+                        <div>
+                            <svg width="21" height="21" fill="none"
+                                stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.828 9.828a4 4 0 1 0-5.656-5.656 4 4 0 0 0 5.656 5.656Z">
+                                </path>
+                                <path
+                                    d="M7.05 16.05A7 7 0 0 1 19 21H5a7 7 0 0 1 2.05-4.95Z">
+                                </path>
+                            </svg>
+                            <span>User Profile</span>
+                        </div>
+                        <svg width="13" height="13" fill="none"
+                            stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="m19 9-7 7-7-7"></path>
+                        </svg>
+                    </li>
+                    <li>
+                        <div>
+                            <svg width="21" height="21" fill="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75S17.376 2.25 12 2.25Zm.094 4.5a3.375 3.375 0 1 1 0 6.75 3.375 3.375 0 0 1 0-6.75ZM12 20.25a8.23 8.23 0 0 1-6.055-2.653C6.359 15.45 10.08 15 12 15s5.64.45 6.055 2.596A8.228 8.228 0 0 1 12 20.25Z">
+                                </path>
+                            </svg>
+                            <span>Account</span>
+                        </div>
+                        <svg width="13" height="13" fill="none"
+                            stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="m19 9-7 7-7-7"></path>
+                        </svg>
+                    </li>
+                    <li>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor"
+                                class="bi bi-bag-dash-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM6 9.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6z" />
+                            </svg>
+                            <span>E-commerce</span>
+                        </div>
+                        <svg width="13" height="13" fill="none"
+                            stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="m19 9-7 7-7-7"></path>
+                        </svg>
+                    </li>
+                    <li>
+                        <div>
+                            <svg width="21" height="21" fill="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 18h10v-2H7v2Z"></path>
+                                <path d="M17 14H7v-2h10v2Z"></path>
+                                <path d="M7 10h4V8H7v2Z"></path>
+                                <path fill-rule="evenodd"
+                                    d="M6 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V9a7 7 0 0 0-7-7H6Zm0 2h7v5h6v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm9 .1A5.009 5.009 0 0 1 18.584 7H15V4.1Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Projects</span>
+                        </div>
+                        <svg width="13" height="13" fill="none"
+                            stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="m19 9-7 7-7-7"></path>
+                        </svg>
+                    </li>
+                    <li>
+                        <div>
+                            <svg width="21" height="21" fill="none"
+                                stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.708 5.267C17.516 4.515 15.783 3.96 12 2.25 8.217 3.959 6.484 4.515 2.292 5.267 1.532 17.303 11.277 21.21 12 21.75c.723-.291 10.217-4.447 9.708-16.483Z">
+                                </path>
+                                <path fill="currentColor" stroke="none"
+                                    d="M12 2.25C8.217 3.959 6.484 4.515 2.292 5.267 1.532 17.303 11.277 21.21 12 21.75V2.25Z">
+                                </path>
+                            </svg>
+                            <span>Authentication</span>
+                        </div>
+                        <svg width="13" height="13" fill="none"
+                            stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="m19 9-7 7-7-7"></path>
+                        </svg>
+                    </li>
+                    <li>
+                        <div>
+                            <svg width="21" height="21" fill="none"
+                                stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+                                </path>
+                                <path d="M8.5 3a4 4 0 1 0 0 8 4 4 0 1 0 0-8z">
+                                </path>
+                                <path d="M20 8v6"></path>
+                                <path d="M23 11h-6"></path>
+                            </svg>
+                            <span>Referals</span>
+                        </div>
+                        <svg width="13" height="13" fill="none"
+                            stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="m19 9-7 7-7-7"></path>
+                        </svg>
+                    </li>
+                    <li>
+                        <div>
+                            <svg width="21" height="21" fill="none"
+                                stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                </path>
+                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 1 0 0-6z">
+                                </path>
+                            </svg>
+                            <span>Welcome Page</span>
+                        </div>
+                        <svg width="13" height="13" fill="none"
+                            stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="m19 9-7 7-7-7"></path>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="apps">
+                Apps
+                <ul>
+                    <li>
+                        <svg width="21" height="21" fill="none"
+                            stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="18" height="18" x="3" y="4" rx="2"
+                                ry="2"></rect>
+                            <path d="M16 2v4"></path>
+                            <path d="M8 2v4"></path>
+                            <path d="M3 10h18"></path>
+                        </svg>
+                        <span>Calender</span>
+                        <span class="new">New</span>
+                    </li>
+                    <li>
+                        <svg width="21" height="21" fill="none"
+                            stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2Z">
+                            </path>
+                        </svg>
+                        <span>calculator</span>
+                    </li>
+                    <li>
+                        <svg width="21" height="21" fill="none"
+                            stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3 9V5.625A1.875 1.875 0 0 1 4.875 3.75h3.557c.37 0 .732.11 1.04.315l1.306.87c.307.205.67.315 1.04.315h7.307A1.875 1.875 0 0 1 21 7.125V9">
+                            </path>
+                            <path
+                                d="m22.495 10.62-.76 7.755a1.875 1.875 0 0 1-1.872 1.875H4.137a1.875 1.875 0 0 1-1.872-1.875l-.76-7.755A1.5 1.5 0 0 1 3 9h18.005a1.5 1.5 0 0 1 1.49 1.62Z">
+                            </path>
+                        </svg>
+                        <span>File Manager</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="logout">
+                <svg width="21" height="21" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m17 16 4-4m0 0-4-4m4 4H7m6 4v1a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v1">
+                    </path>
+                </svg>
+                <span>Logout</span>
+            </div>
+        </div>
+        <div class="main-body">
+            <div class="top">
+                <svg width="20" height="20" fill="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m21.75 20.063-5.816-5.818a7.523 7.523 0 0 0 1.44-4.433c0-4.17-3.393-7.562-7.562-7.562-4.17 0-7.562 3.392-7.562 7.562s3.392 7.562 7.562 7.562a7.523 7.523 0 0 0 4.433-1.44l5.818 5.816 1.687-1.688ZM9.812 14.986a5.174 5.174 0 1 1-.002-10.35 5.174 5.174 0 0 1 0 10.349Z">
+                    </path>
+                </svg>
+                <input type="text" placeholder="Search in Insight">
+                <div>
+                    <div class="theme-toggler">
+                        <span
+                            class="material-symbols-outlined active">light_mode</span>
+                        <span class="material-symbols-outlined">dark_mode</span>
+                    </div>
+                    <div class="notification">
+                        <svg width="20" height="20" fill="none"
+                            stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9">
+                            </path>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                        </svg>
+                        <span class="dot"></span>
+                    </div>
+                    <svg class="dot-box" width="20" height="20"
+                        fill="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.52 5.28a4.2 4.2 0 0 0-4.2 4.2v6a4.2 4.2 0 0 0 4.2 4.2h6a4.2 4.2 0 0 0 4.2-4.2v-3a.6.6 0 1 1 1.2 0v3a5.4 5.4 0 0 1-5.4 5.4h-6a5.4 5.4 0 0 1-5.4-5.4v-6a5.4 5.4 0 0 1 5.4-5.4h3a.6.6 0 1 1 0 1.2h-3Z">
+                        </path>
+                        <path
+                            d="M21.12 6.48a3.6 3.6 0 1 1-7.201 0 3.6 3.6 0 0 1 7.2 0Z">
+                        </path>
+                    </svg>
+                    <svg class="grid" width="20" height="20" fill="none"
+                        stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3h7v7H3z"></path>
+                        <path d="M14 3h7v7h-7z"></path>
+                        <path d="M14 14h7v7h-7z"></path>
+                        <path d="M3 14h7v7H3z"></path>
+                    </svg>
+                    <img src="Images/Elon-Musk.jpg" alt="">
+                </div>
+            </div>
+            <div class="heading">
+                <h1>Dashboard</h1>
+                <button>
+                    <svg width="25" height="25" fill="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.6 10.8a3.6 3.6 0 1 0 0-7.2 3.6 3.6 0 0 0 0 7.2Zm0 2.4a7.2 7.2 0 0 1 7.2 7.2H2.4a7.2 7.2 0 0 1 7.2-7.2Zm9.6-4.8a1.2 1.2 0 1 0-2.4 0v1.2h-1.2a1.2 1.2 0 1 0 0 2.4h1.2v1.2a1.2 1.2 0 1 0 2.4 0V12h1.2a1.2 1.2 0 0 0 0-2.4h-1.2V8.4Z">
+                        </path>
+                    </svg>
+                    <span>Invite users</span>
+                </button>
+            </div>
+            <hr class="hr1">
+            <div class="data">
+                <div class="box">
+                    <div class="details">
+                        <span class="topic">Total Users</span>
+                        <span class="number">72,540</span>
+                        <div class="change"
+                            style="background-color: rgb(153, 247, 144);">
+                            <img src="Images/icons8-increase-48.png" alt="">
+                            <span style="color: #005f05;">12.5%</span>
+                        </div>
+                    </div>
+                    <div class="graph">
+                        <svg>
+                            <circle cx='38' cy='38' r="36"></circle>
+                        </svg>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="details">
+                        <span class="topic">Sessions</span>
+                        <span class="number">29.4%</span>
+                        <div class="change"
+                            style="background-color: rgb(181, 248, 175);">
+                            <img src="Images/icons8-increase-48.png" alt="">
+                            <span style="color: #005f05;">1.7%</span>
+                        </div>
+                    </div>
+                    <div class="graph">
+                        <svg>
+                            <circle cx='38' cy='38' r="36"></circle>
+                        </svg>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="details">
+                        <span class="topic">Avg. Click Rate</span>
+                        <span class="number">56.8%</span>
+                        <div class="change"
+                            style="background-color: rgb(247, 195, 195);">
+                            <img src="Images/icons8-decrease-48.png" alt="">
+                            <span style="color: #b30000;">4.5%</span>
+                        </div>
+                    </div>
+                    <div class="graph">
+                        <svg>
+                            <circle cx='38' cy='38' r="36"></circle>
+                        </svg>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="details">
+                        <span class="topic">Total Users</span>
+                        <span class="number">92,913</span>
+                        <div class="change"
+                            style="justify-content: center; background-color: rgb(228, 228, 228);">
+                            <span
+                                style="color: rgba(77, 77, 77, 0.918);">0.0%</span>
+                        </div>
+                    </div>
+                    <div class="graph">
+                        <svg>
+                            <circle cx='38' cy='38' r="36"></circle>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="showcase">
+                <div class="import-data">
+                    <div class="head">
+                        <p>Import data into insight dashboard</p>
+                        <svg class="ellipsis" width="15" height="15"
+                            fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 14.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z">
+                            </path>
+                            <path
+                                d="M12 21.75a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z">
+                            </path>
+                            <path
+                                d="M12 6.75a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="description">
+                        <p>See and talk to your users and lead immediately by
+                            importing your data into Insight Dashboard Platform
+                        </p>
+                    </div>
+                    <div class="list-head">Import User From :</div>
+                    <ul>
+                        <hr class="hr2">
+                        <li>
+                            <div>
+                                <img src="Images/icons8-web-scraper-48.png"
+                                    alt="">
+                                <div>
+                                    <span>Scrapers</span>
+                                    <span>Users</span>
+                                </div>
+                            </div>
+                            <button>
+                                <span>Launch Importer</span>
+                                <svg width="15" height="15" fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M12.795 6.375a.625.625 0 0 0-.625-.625H3.875A1.875 1.875 0 0 0 2 7.625v12.5A1.875 1.875 0 0 0 3.875 22h12.5a1.875 1.875 0 0 0 1.875-1.875V11.83a.624.624 0 1 0-1.25 0v8.295a.624.624 0 0 1-.625.625h-12.5a.625.625 0 0 1-.625-.625v-12.5A.625.625 0 0 1 3.875 7h8.295a.625.625 0 0 0 .625-.625Z"
+                                        clip-rule="evenodd"></path>
+                                    <path fill-rule="evenodd"
+                                        d="M22 2.625A.625.625 0 0 0 21.375 2h-6.25a.625.625 0 1 0 0 1.25h4.741L9.682 13.432a.626.626 0 1 0 .885.886L20.75 4.134v4.741a.625.625 0 1 0 1.25 0v-6.25Z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </li>
+                        <hr class="hr2">
+                        <li>
+                            <div>
+                                <img src="Images/icons8-biotech-48.png" alt="">
+                                <div>
+                                    <span>Essence</span>
+                                    <span>Users</span>
+                                </div>
+                            </div>
+                            <button>
+                                <span>Launch Importer</span>
+                                <svg width="15" height="15" fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M12.795 6.375a.625.625 0 0 0-.625-.625H3.875A1.875 1.875 0 0 0 2 7.625v12.5A1.875 1.875 0 0 0 3.875 22h12.5a1.875 1.875 0 0 0 1.875-1.875V11.83a.624.624 0 1 0-1.25 0v8.295a.624.624 0 0 1-.625.625h-12.5a.625.625 0 0 1-.625-.625v-12.5A.625.625 0 0 1 3.875 7h8.295a.625.625 0 0 0 .625-.625Z"
+                                        clip-rule="evenodd"></path>
+                                    <path fill-rule="evenodd"
+                                        d="M22 2.625A.625.625 0 0 0 21.375 2h-6.25a.625.625 0 1 0 0 1.25h4.741L9.682 13.432a.626.626 0 1 0 .885.886L20.75 4.134v4.741a.625.625 0 1 0 1.25 0v-6.25Z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </li>
+                        <hr class="hr2">
+                        <li>
+                            <div>
+                                <img src="Images/icons8-cloudflare-48.png"
+                                    alt="">
+                                <div>
+                                    <span>CloudFlare</span>
+                                    <span>Users</span>
+                                </div>
+                            </div>
+                            <button>
+                                <span>Launch Importer</span>
+                                <svg width="15" height="15" fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M12.795 6.375a.625.625 0 0 0-.625-.625H3.875A1.875 1.875 0 0 0 2 7.625v12.5A1.875 1.875 0 0 0 3.875 22h12.5a1.875 1.875 0 0 0 1.875-1.875V11.83a.624.624 0 1 0-1.25 0v8.295a.624.624 0 0 1-.625.625h-12.5a.625.625 0 0 1-.625-.625v-12.5A.625.625 0 0 1 3.875 7h8.295a.625.625 0 0 0 .625-.625Z"
+                                        clip-rule="evenodd"></path>
+                                    <path fill-rule="evenodd"
+                                        d="M22 2.625A.625.625 0 0 0 21.375 2h-6.25a.625.625 0 1 0 0 1.25h4.741L9.682 13.432a.626.626 0 1 0 .885.886L20.75 4.134v4.741a.625.625 0 1 0 1.25 0v-6.25Z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </li>
+                        <hr class="hr2">
+                    </ul>
+                    <div>
+                        <p>
+                            Or you can <span>sync data to Insight
+                                Dashboard</span> to ensure
+                            your data is always up to date
+                        </p>
+                    </div>
+                </div>
+                <div class="expenses">
+                    <div class="top">
+                        <span>Monthly Expenses</span>
+                        <div>
+                            <button>
+                                This Week
+                            </button>
+                            <button>
+                                Last Week
+                            </button>
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <div>
+                            <span>35%</span>
+                            <div>
+                                <img src="Images/icons8-increase-48.png" alt=""
+                                    style="width:17px ;">
+                                <span>25.3%</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="dot blue-dot"></span>
+                            <span>New</span>
+                            <span class="dot"></span>
+                            <span>Overdue</span>
+                        </div>
+                    </div>
+                    <div class="graph">
+                        <div class="values">
+                            <span>600</span>
+                            <span>500</span>
+                            <span>400</span>
+                            <span>300</span>
+                            <span>200</span>
+                            <span>100</span>
+                        </div>
+                        <div>
+                            <div id="my-chart">
+                                <table class="charts-css column data-spacing-6">
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                                style="--size: calc( 90 / 100 ); --color: rgb(99, 99, 226);">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="--size: calc( 80 / 100 );  --color: rgb(231, 231, 231);">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="--size: calc( 40 / 100 ); --color: rgb(99, 99, 226);">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="--size: calc( 70 / 100 );  --color: rgb(231, 231, 231);">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="--size: calc( 100 / 100 ); --color: rgb(99, 99, 226);">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="--size: calc( 90 / 100 );  --color: rgb(231, 231, 231);">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="--size: calc( 75 / 100 ); --color: rgb(99, 99, 226);">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="--size: calc( 68 / 100 );  --color: rgb(231, 231, 231);">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="--size: calc( 50 / 100 ); --color: rgb(99, 99, 226);">
+                                                <span class="data"> </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="--size: calc( 94 / 100 );  --color: rgb(231, 231, 231);">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="--size: calc( 93 / 100 ); --color: rgb(99, 99, 226);">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="--size: calc( 99 / 100 );  --color: rgb(231, 231, 231);">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="--size: calc( 100 / 100 ); --color: rgb(99, 99, 226);">
+                                                <span class="data"> </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
